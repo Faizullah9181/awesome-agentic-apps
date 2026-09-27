@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://faizullah9181.github.io/awesome-agentic-apps/sitemap.xml

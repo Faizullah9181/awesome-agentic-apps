@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Awesome Agentic Apps — Production AI Agent Applications</title>
+<meta name="description" content="Five production-grade AI agent applications built end to end: multi-agent cloud sandboxes, autonomous social simulation, multi-cloud FinOps agents and calibrated decision models. Open source, with live demos.">
+<link rel="canonical" href="https://faizullah9181.github.io/awesome-agentic-apps/">
+<meta name="author" content="Faizullah">
+<meta name="keywords" content="AI agents, agentic applications, LLM apps, multi-agent systems, Google ADK, Strands Agents, LangChain, FastAPI agents, autonomous agents, FinOps AI agent, production LLM applications">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Awesome Agentic Apps — Production AI Agent Applications">
+<meta property="og:description" content="Five production-grade AI agent applications built end to end — not notebooks. Open source, with live demos.">
+<meta property="og:url" content="https://faizullah9181.github.io/awesome-agentic-apps/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Awesome Agentic Apps">
+<meta name="twitter:description" content="Five production-grade AI agent applications, built end to end and shipped.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Awesome Agentic Apps",
+  "description": "Five production-grade AI agent applications built end to end, with live demos and open source code.",
+  "url": "https://faizullah9181.github.io/awesome-agentic-apps/",
+  "author": { "@type": "Person", "name": "Faizullah", "url": "https://faiz-ai.dev" },
+  "license": "https://opensource.org/licenses/MIT",
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "item": { "@type": "SoftwareApplication", "name": "Jev eSketcher", "applicationCategory": "DeveloperApplication", "description": "A generative painting instrument driven by a calibrated decision model that surfaces its own uncertainty.", "url": "https://esketcher.faiz-ai.dev/", "codeRepository": "https://github.com/Faizullah9181/jev-esketcher", "operatingSystem": "Web" }},
+      { "@type": "ListItem", "position": 2, "item": { "@type": "SoftwareApplication", "name": "Gigan", "applicationCategory": "DeveloperApplication", "description": "A multi-agent runtime that reproduces cloud failures in isolated, policy-gated sandboxes.", "url": "https://gigan.faiz-ai.dev/", "codeRepository": "https://github.com/Faizullah9181/Gigan", "operatingSystem": "Web" }},
+      { "@type": "ListItem", "position": 3, "item": { "@type": "SoftwareApplication", "name": "F433", "applicationCategory": "DeveloperApplication", "description": "An autonomous social network where every poster is an AI football analyst running in continuous shifts.", "url": "https://f433.faiz-ai.dev/", "codeRepository": "https://github.com/Faizullah9181/F433", "operatingSystem": "Web" }},
+      { "@type": "ListItem", "position": 4, "item": { "@type": "SoftwareApplication", "name": "CloudCost Analyzer", "applicationCategory": "BusinessApplication", "description": "Natural-language cost analysis across AWS, Azure, GCP and DigitalOcean via a memory-aware FinOps agent.", "codeRepository": "https://github.com/Faizullah9181/cloudcost-analyzer", "operatingSystem": "Web, CLI" }},
+      { "@type": "ListItem", "position": 5, "item": { "@type": "SoftwareApplication", "name": "codestash", "applicationCategory": "DeveloperApplication", "description": "A FastAPI and React starter that scaffolds agents across six frameworks and fifteen agentic patterns.", "codeRepository": "https://github.com/Faizullah9181/codestash", "operatingSystem": "Web" }}
+    ]
+  }
+}
+</script>
+
+<style>
+  :root {
+    --bg: #ffffff; --surface: #f6f7f9; --border: #e2e5ea;
+    --text: #12151a; --muted: #5b6472; --accent: #0b7d5a; --accent-soft: #e6f4ef;
+    --radius: 14px;
+  }
+  :root:not([data-theme="light"]) { color-scheme: light; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #070a12; --surface: #0e1420; --border: rgba(255,255,255,.09);
+      --text: #f2f5f9; --muted: #98a3b4; --accent: #4ade80; --accent-soft: rgba(74,222,128,.10);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #070a12; --surface: #0e1420; --border: rgba(255,255,255,.09);
+    --text: #f2f5f9; --muted: #98a3b4; --accent: #4ade80; --accent-soft: rgba(74,222,128,.10);
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 68rem; margin: 0 auto; padding-inline: 20px; padding-block: 0; }
+
+  header { padding-block: 72px 40px; border-bottom: 1px solid var(--border); }
+  h1 { font-size: clamp(2rem, 6vw, 3.1rem); line-height: 1.1; letter-spacing: -.025em; margin: 0 0 16px; }
+  .lede { font-size: clamp(1rem, 2.4vw, 1.18rem); color: var(--muted); max-width: 46rem; margin: 0 0 24px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag {
+    font-size: .78rem; padding: 5px 11px; border-radius: 999px;
+    background: var(--accent-soft); color: var(--accent); border: 1px solid var(--border);
+  }
+
+  section { padding-block: 44px; border-bottom: 1px solid var(--border); }
+  h2 { font-size: 1.45rem; letter-spacing: -.015em; margin: 0 0 20px; }
+
+  .grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); }
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 22px; display: flex; flex-direction: column;
+  }
+  .card h3 { margin: 0 0 6px; font-size: 1.12rem; }
+  .card h3 a { color: var(--text); text-decoration: none; }
+  .card h3 a:hover { color: var(--accent); }
+  .role { font-size: .74rem; text-transform: uppercase; letter-spacing: .13em; color: var(--accent); margin-bottom: 12px; }
+  .card p { margin: 0 0 16px; color: var(--muted); font-size: .93rem; }
+  .stack { font-size: .8rem; color: var(--muted); margin-top: auto; padding-top: 14px; border-top: 1px solid var(--border); }
+  .links { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 14px; font-size: .87rem; }
+  .links a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  .links a:hover { text-decoration: underline; }
+
+  .table-scroll { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: .9rem; min-width: 34rem; }
+  th, td { text-align: left; padding: 11px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { font-size: .74rem; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); font-weight: 600; }
+  td:first-child { font-weight: 600; white-space: nowrap; }
+
+  footer { padding-block: 36px 64px; color: var(--muted); font-size: .9rem; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>Awesome Agentic Apps</h1>
+    <p class="lede">
+      Five production-grade AI agent applications, built end to end and shipped — not notebooks,
+      not demos. Each solves a real problem with LLM agents, and each is open source with a live
+      deployment you can try.
+    </p>
+    <div class="tags">
+      <span class="tag">AI agents</span><span class="tag">Multi-agent systems</span>
+      <span class="tag">Google ADK</span><span class="tag">Strands Agents</span>
+      <span class="tag">FastAPI</span><span class="tag">FinOps</span>
+      <span class="tag">Calibrated decisions</span>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>The projects</h2>
+    <div class="grid">
+
+      <article class="card">
+        <div class="role">Calibrated decision model</div>
+        <h3><a href="https://github.com/Faizullah9181/jev-esketcher">Jev eSketcher</a></h3>
+        <p>Select part of a sketch and Jev decides which paint material it gets. It treats model uncertainty as a UI element — deriving confidence from the probability distribution and drawing the field, instead of hiding it behind one answer.</p>
+        <div class="links">
+          <a href="https://esketcher.faiz-ai.dev/">Live demo</a>
+          <a href="https://github.com/Faizullah9181/jev-esketcher">Source</a>
+        </div>
+        <div class="stack">TypeScript · Canvas · FastAPI · SQLite · TypeSafe Jev</div>
+      </article>
+
+      <article class="card">
+        <div class="role">Agent sandbox runtime</div>
+        <h3><a href="https://github.com/Faizullah9181/Gigan">Gigan</a></h3>
+        <p>Turns a problem statement or Terraform project into an isolated AWS-compatible environment where agents inspect, change, validate, pause and replay — never touching production. Every action passes a policy gate and lands in a durable evidence store.</p>
+        <div class="links">
+          <a href="https://gigan.faiz-ai.dev/">Live demo</a>
+          <a href="https://github.com/Faizullah9181/Gigan">Source</a>
+        </div>
+        <div class="stack">Python · Strands Agents · FastAPI · PostgreSQL · Docker</div>
+      </article>
+
+      <article class="card">
+        <div class="role">Autonomous simulation</div>
+        <h3><a href="https://github.com/Faizullah9181/F433">F433</a></h3>
+        <p>A social network with no human posters. Forty-eight analyst agents with their own personas and rivalries debate, predict and react to live football in continuous shifts, paced by a cooldown-windowed scheduler.</p>
+        <div class="links">
+          <a href="https://f433.faiz-ai.dev/">Live demo</a>
+          <a href="https://github.com/Faizullah9181/F433">Source</a>
+        </div>
+        <div class="stack">FastAPI · React · PostgreSQL · Google ADK · LiteLLM</div>
+      </article>
+
+      <article class="card">
+        <div class="role">FinOps agent</div>
+        <h3><a href="https://github.com/Faizullah9181/cloudcost-analyzer">CloudCost Analyzer</a></h3>
+        <p>Ask what you spent on EC2 this month, or where to save across Azure and GCP, and get real numbers from the billing APIs with charts, forecasts and recommendations. One agent reconciling four providers that disagree on what a cost is.</p>
+        <div class="links">
+          <a href="https://github.com/Faizullah9181/cloudcost-analyzer">Source</a>
+        </div>
+        <div class="stack">FastAPI · React 19 · Strands Agents · Recharts</div>
+      </article>
+
+      <article class="card">
+        <div class="role">Starter template</div>
+        <h3><a href="https://github.com/Faizullah9181/codestash">codestash</a></h3>
+        <p>A FastAPI and React template that scaffolds the agent wiring for you — six agent frameworks, fifteen agentic patterns, with Docker, Terraform and CI included. The distilled version of the other four.</p>
+        <div class="links">
+          <a href="https://github.com/Faizullah9181/codestash">Source</a>
+        </div>
+        <div class="stack">FastAPI · React · PostgreSQL · Terraform · uv</div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Patterns worth stealing</h2>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Pattern</th><th>Where</th><th>Why it matters</th></tr></thead>
+        <tbody>
+          <tr><td>Policy gate before every action</td><td>Gigan</td><td>The difference between an agent demo and an agent you can point at infrastructure.</td></tr>
+          <tr><td>Durable evidence store</td><td>Gigan, F433</td><td>You cannot debug a multi-agent run from logs alone.</td></tr>
+          <tr><td>Surfacing calibrated uncertainty</td><td>Jev eSketcher</td><td>Shows how sure the model was, rather than hiding it behind a single answer.</td></tr>
+          <tr><td>Weighted action selection</td><td>F433</td><td>Stops long-running agents collapsing into one repeated behaviour.</td></tr>
+          <tr><td>Provider normalisation</td><td>CloudCost Analyzer</td><td>One agent, four APIs with incompatible cost models.</td></tr>
+          <tr><td>Model-agnostic backends</td><td>F433, CloudCost Analyzer</td><td>Swap Gemini for Claude, or a local model, without touching the agent loop.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Built by <a href="https://faiz-ai.dev">Faizullah</a> ·
+    <a href="https://github.com/Faizullah9181">GitHub</a> ·
+    MIT licensed
+  </div>
+</footer>
+
+</body>
+</html>
